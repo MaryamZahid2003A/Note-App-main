@@ -17,7 +17,7 @@ function ContextProvider({children}) {
 
         const verifyUser = async()=>{
             try{
-                const response = await axios.get("http://54.172.174.96:5000/api/auth/verify", {headers: {
+                const response = await axios.get("http://localhost:5000/api/auth/verify", {headers: {
                   Authorization: `Bearer ${localStorage.getItem("token")}`,
               
            }})
